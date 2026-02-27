@@ -32,26 +32,40 @@ export default function Home() {
       {/* Category Highlights */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/categories/destinations" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/categories/planning" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all lg:col-span-2">
               <div className="absolute inset-0 bg-emerald-900/40 group-hover:bg-emerald-900/30 transition-colors z-10" />
-              <Image src="https://picsum.photos/seed/dest/800/600" alt="Destinations" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
+              <Image src="https://picsum.photos/seed/planning/800/600" alt="Planning" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 z-20 flex items-center justify-center">
+                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Planning</h3>
+              </div>
+            </Link>
+            <Link href="/categories/budget" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
+              <div className="absolute inset-0 bg-indigo-900/40 group-hover:bg-indigo-900/30 transition-colors z-10" />
+              <Image src="https://picsum.photos/seed/budget/800/600" alt="Budget" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 z-20 flex items-center justify-center">
+                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Budget</h3>
+              </div>
+            </Link>
+            <Link href="/categories/nomad" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
+              <div className="absolute inset-0 bg-amber-900/40 group-hover:bg-amber-900/30 transition-colors z-10" />
+              <Image src="https://picsum.photos/seed/nomad/800/600" alt="Digital Nomad" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 z-20 flex items-center justify-center">
+                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Digital Nomad</h3>
+              </div>
+            </Link>
+            <Link href="/categories/destinations" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
+              <div className="absolute inset-0 bg-rose-900/40 group-hover:bg-rose-900/30 transition-colors z-10" />
+              <Image src="https://picsum.photos/seed/destinations/800/600" alt="Destinations" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 z-20 flex items-center justify-center">
                 <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Destinations</h3>
               </div>
             </Link>
-            <Link href="/categories/homeschooling" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
-              <div className="absolute inset-0 bg-indigo-900/40 group-hover:bg-indigo-900/30 transition-colors z-10" />
-              <Image src="https://picsum.photos/seed/school/800/600" alt="Homeschooling" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
+            <Link href="/categories/gear" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
+              <div className="absolute inset-0 bg-cyan-900/40 group-hover:bg-cyan-900/30 transition-colors z-10" />
+              <Image src="https://picsum.photos/seed/gear/800/600" alt="Travel Gear" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 z-20 flex items-center justify-center">
-                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Homeschooling</h3>
-              </div>
-            </Link>
-            <Link href="/categories/budgeting" className="group relative rounded-2xl overflow-hidden h-64 shadow-sm hover:shadow-md transition-all">
-              <div className="absolute inset-0 bg-amber-900/40 group-hover:bg-amber-900/30 transition-colors z-10" />
-              <Image src="https://picsum.photos/seed/budget/800/600" alt="Budgeting" fill className="absolute inset-0 object-cover" referrerPolicy="no-referrer" />
-              <div className="absolute inset-0 z-20 flex items-center justify-center">
-                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Budgeting</h3>
+                <h3 className="text-3xl font-serif font-bold text-white tracking-wide">Travel Gear</h3>
               </div>
             </Link>
           </div>

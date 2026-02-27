@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from '@/lib/getPosts';
+import { getPostBySlug, getAllPosts, getPostsByCategory } from '@/lib/getPosts';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { format } from 'date-fns';
@@ -6,6 +6,8 @@ import Markdown from 'react-markdown';
 import AffiliateDisclaimer from '@/components/AffiliateDisclaimer';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import Newsletter from '@/components/Newsletter';
+import ShareButtons from '@/components/ShareButtons';
+import ArticleCard from '@/components/ArticleCard';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
@@ -64,6 +66,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     datePublished: post.date,
     description: post.description,
   };
+
+  const relatedPosts = getPostsByCategory(post.category)
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 3);
 
   return (
     <article className="bg-white min-h-screen pb-16">
@@ -125,6 +131,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </Markdown>
           </div>
 
+          <ShareButtons 
+            url={`${process.env.APP_URL || 'https://familylifeontour.com'}/blog/${post.slug}`} 
+            title={post.title} 
+            image={post.image} 
+          />
+
           <AdPlaceholder />
 
           <div className="mt-12 pt-8 border-t border-slate-200">
@@ -132,6 +144,20 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         </div>
       </div>
+
+      {/* Related Posts */}
+      {relatedPosts.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+          <div className="border-t border-slate-200 pt-16">
+            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-8 text-center">Related Articles</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {relatedPosts.map((relatedPost) => (
+                <ArticleCard key={relatedPost.slug} post={relatedPost} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
