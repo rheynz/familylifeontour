@@ -91,7 +91,7 @@ To truly master this **Australia family travel guide**, you need actionable insi
 **Connectivity for Remote Work**
 Do not rely solely on Airbnb Wi-Fi. Upon arrival, immediately buy a local SIM card. Telstra offers the widest coverage, especially if you plan to visit regional areas or national parks. Optus is a close second and often slightly cheaper. Buy a 5G data dongle so you can work seamlessly while the kids play at the beach.
 
-![Digital nomad parent working on a laptop while kids play nearby](nomad-parent.webp)
+![Digital nomad parent working on a laptop while kids play nearby](/images/blog/nomad-parent.webp)
 
 **Hacking the High Costs**
 Australia is expensive, but you can dramatically lower your daily spend:
