@@ -103,8 +103,26 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
           <AffiliateDisclaimer />
 
-          <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-a:text-emerald-600 hover:prose-a:text-emerald-700">
-            <Markdown>{post.content}</Markdown>
+          <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-a:text-emerald-600 hover:prose-a:text-emerald-700 prose-img:rounded-xl prose-img:shadow-md">
+            <Markdown
+              components={{
+                img: ({ node, ...props }) => {
+                  return (
+                    <span className="block relative w-full h-[400px] sm:h-[500px] my-8">
+                      <Image
+                        src={typeof props.src === 'string' ? props.src : ''}
+                        alt={props.alt || 'Blog image'}
+                        fill
+                        className="object-cover rounded-xl shadow-md"
+                        referrerPolicy="no-referrer"
+                      />
+                    </span>
+                  );
+                },
+              }}
+            >
+              {post.content}
+            </Markdown>
           </div>
 
           <AdPlaceholder />
