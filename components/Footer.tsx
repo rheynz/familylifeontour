@@ -17,9 +17,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold text-slate-400 tracking-wider uppercase">Content</h3>
                 <ul className="mt-4 space-y-4">
                   <li><Link href="/blog" className="text-base text-slate-500 hover:text-slate-900">All Posts</Link></li>
+                  <li><Link href="/categories/planning" className="text-base text-slate-500 hover:text-slate-900">Planning</Link></li>
+                  <li><Link href="/categories/budget" className="text-base text-slate-500 hover:text-slate-900">Budgeting</Link></li>
                   <li><Link href="/categories/destinations" className="text-base text-slate-500 hover:text-slate-900">Destinations</Link></li>
-                  <li><Link href="/categories/homeschooling" className="text-base text-slate-500 hover:text-slate-900">Homeschooling</Link></li>
-                  <li><Link href="/categories/budgeting" className="text-base text-slate-500 hover:text-slate-900">Budgeting</Link></li>
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
