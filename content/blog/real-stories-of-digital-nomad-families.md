@@ -108,5 +108,3 @@ There is no perfect age. Toddlers are portable but require more "stuff," while t
 
 **How much does the nomadic family lifestyle cost per month?**
 It varies wildly. A family of four can live comfortably in Southeast Asia for $3,000/month, while the same lifestyle in Western Europe might require $6,000–$8,000/month.
-
-<!-- Total Kata: 1285 -->

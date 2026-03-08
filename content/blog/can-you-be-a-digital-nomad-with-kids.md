@@ -86,7 +86,3 @@ The "one in, one out" rule is essential. For every new toy or clothing item boug
 
 **5. Can you be a digital nomad with kids if you have a 9-to-5 job?**
 It is possible, but it requires careful time-zone management. If your company requires you to be online during New York hours, living in Southeast Asia will mean working through the night. Many nomad families prefer "asynchronous" work or roles with flexible hours.
-
----
-
-<!-- Total Kata: 1342 -->

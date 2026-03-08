@@ -102,7 +102,3 @@ While major hubs like London, New York, and Bali have well-known options, smalle
 
 **5. Can I use a work and daycare center if I only need it for one day?**
 Many spaces offer "Day Passes" specifically for traveling families. However, it is highly recommended to book at least 48 hours in advance, as childcare ratios are strictly regulated and spaces fill up quickly.
-
----
-
-<!-- Total Kata: 1428 -->

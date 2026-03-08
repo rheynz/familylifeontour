@@ -111,5 +111,3 @@ Yes, occasionally. We handle this by scheduling regular video calls with grandpa
 
 **5. How do you maintain a work-life balance?**
 It’s a constant juggle. The **daily routine of a traveling family** requires strict time-blocking. We treat our work hours like a traditional office job to ensure we get things done, which then frees us up for family adventures.
-
-<!-- Total Kata: 1354 -->

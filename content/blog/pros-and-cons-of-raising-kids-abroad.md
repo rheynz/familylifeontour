@@ -125,5 +125,3 @@ Always research the healthcare system of your destination before moving. In many
 
 **5. How do kids make friends when moving frequently?**
 Look for expat communities, join local sports clubs, or use "worldschooling" hubs. Children are remarkably resilient and often find common ground through play long before they share a common language.
-
-<!-- Total Kata: 1342 -->
